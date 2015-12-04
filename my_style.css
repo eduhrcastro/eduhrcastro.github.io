@@ -385,14 +385,6 @@ table.default tfoot
 	font-size: 1em;
 }
 
-img{
-	-webkit-transform: rotate(270deg);
-	-moz-transform: rotate(270deg);
-	-o-transform: rotate(270deg);
-	-ms-transform: rotate(270deg);
-	transform: rotate(270deg);
-}
-
 .image{	
 	display: inline-block;
 	border: 0;
@@ -629,11 +621,6 @@ header{
 {
 	position: relative;
 	margin-bottom: 3em;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
 }
 
 #main > section.two
