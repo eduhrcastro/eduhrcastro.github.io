@@ -1,13 +1,1 @@
 @CHARSET "ISO-8859-1";
-
-body,input,textarea,select
-{
-	font-size: 14pt;
-}
-
-h2
-{
-	font-size: 1.5em;
-	letter-spacing: 0;
-	font-weight: 300;
-}
