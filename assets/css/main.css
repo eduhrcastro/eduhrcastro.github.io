@@ -84,7 +84,16 @@
 	.container {
 		width: 1400px;
 	}
-
+	
+	.cite-phrase{
+		float: right;
+		margin-top: 2%;
+	}
+	
+	.button-padding{
+		margin-top: 2%;
+	}
+	
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 		.container.\31 25\25 {
