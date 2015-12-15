@@ -1,18 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Eduardo Castro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 	</head>
 	<body>
 
@@ -30,19 +23,6 @@
 
 					<!-- Nav -->
 						<nav id="nav">
-							<!--
-
-								Prologue's nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Introduction</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
@@ -98,7 +78,7 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="https://en.wikipedia.org/wiki/Iracema" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
 							<p>Hi! My name is Eduardo Castro. I am 23 years old and live in Fortaleza.
 							   Currently i study Computer Engineering at IFCE - Instituto Federal de Educação, Ciência e Tecnologia do Ceará
@@ -106,7 +86,7 @@
 							    where we create unique, distinguished, tailored apps, websites and embedded systems.
 								<strong> Furthermore, you can hire me for freelance work.</strong> You also can see my positions at <a href="http://http://github-awards.com/users/eduhrcastro">Github Awards</a>.
 							</p>
-							<p>What else do you want to know? Send me a <a href="#contact">e-mail</a>!</p>
+							<p style="padding-bottom:-100px; margin-bottom: -100px;">What else do you want to know? Send me a <a href="#contact">e-mail</a>!</p>
 						</div>
 					</section>
 
@@ -117,7 +97,7 @@
 							<header>
 								<h2>Portfolio</h2>
 							</header>
-
+							
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
 							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
 							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
@@ -126,13 +106,13 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="https://github.com/eduhrcastro/10-Medidas" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="http://github.com/eduhrcastro/10-Medidas/" class="image fit"><img id="10WaysAgainstCorruption" src="images/pic02.jpg" alt="" /></a>
 										<header>
 											<h3>10 Ways Against Corruption - Android App</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img id="pic03" src="images/pic03.jpg" alt="" /></a>
 										<header>
 											<h3>Rhoncus Semper</h3>
 										</header>
@@ -140,13 +120,13 @@
 								</div>
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="https://github.com/eduhrcastro/IFCE-Mobile" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="https://github.com/eduhrcastro/IFCE-Mobile" class="image fit"><img  id="ifceMobile" src="images/pic04.jpg" alt="" /></a>
 										<header>
 											<h3>IFCE Mobile - Android App</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img id="pic05" src="images/pic05.jpg" alt="" /></a>
 										<header>
 											<h3>Natoque Vitae</h3>
 										</header>
@@ -154,13 +134,13 @@
 								</div>
 								<div class="4u$ 12u$(mobile)">
 									<article class="item">
-										<a href="http://nucleus.eti.com" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="http://nucleus.eti.com" class="image fit"><img id="nucleus" src="images/pic06.jpg" alt="" /></a>
 										<header>
 											<h3>Nucleus Technology</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="https://github.com/eduhrcastro/graphs" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="https://github.com/eduhrcastro/graphs" class="image fit"><img id="graphs" src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>Library Graph.h - C++</h3>
 										</header>
@@ -218,8 +198,7 @@
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+            
 	</body>
 </html>
