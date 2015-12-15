@@ -1802,7 +1802,6 @@
 	form input[type="password"],
 	form select,
 	form textarea {
-		position: relative;
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
@@ -1906,7 +1905,6 @@
 	input[type="reset"],
 	button,
 	.button {
-		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
 		color: #fff !important;

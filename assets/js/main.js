@@ -15,7 +15,51 @@
 	});
 
 	$(function() {
-
+		
+		//Wrapper bar animation
+		var state = $('#wrapper').css("block");
+		
+		$('#close-wrapper').click(function(){
+			$('#wrapper').hide('slow');
+		});
+		
+		$('#graphs').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');	
+		});
+		
+		$('#10WaysAgainstCorruption').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');
+		});
+		
+		$('#ifceMobile').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');
+		});
+		
+		$('#nucleus').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');
+		});
+		
+		$('#pic03').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');	
+		});
+		
+		$('#pic05').click(function(){
+			if(state != "none")
+				$('#wrapper').hide('fast');
+			$('#wrapper').show('slow');	
+		});
+		
+	
 		var	$window = $(window),
 			$body = $('body');
 
