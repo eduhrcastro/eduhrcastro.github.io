@@ -15,51 +15,97 @@
 	});
 
 	$(function() {
-		
-		//Wrapper bar animation
-		var state = $('#wrapper').css("block");
-		
-		$('#close-wrapper').click(function(){
-			$('#wrapper').hide('slow');
-		});
-		
-		$('#graphs').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');	
-		});
-		
-		$('#10WaysAgainstCorruption').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');
-		});
-		
-		$('#ifceMobile').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');
-		});
-		
-		$('#nucleus').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');
-		});
-		
-		$('#pic03').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');	
-		});
-		
-		$('#pic05').click(function(){
-			if(state != "none")
-				$('#wrapper').hide('fast');
-			$('#wrapper').show('slow');	
-		});
-		
 	
+        var bar = $('#wrapper');
+        
+        var title = $('#wTitle');
+        var descriptionTitle = $('#wDesTitle');
+        var urlLink = $('#wUrl');
+        var urlLinkl = $('#wUrlL');
+        var des = $('#description');
+        
+        var obj = $('.item');
+        
+        var displayBar = function(){
+            bar.show('slow');
+        }
+        
+        var hideBar = function(){
+            bar.hide('fast');
+        }
+        
+        var isShowing = function(){
+            var state = bar.css('block');
+            if(state == "none")
+                return false;
+            return true;
+        }
+    
+        var workClicked = function(){
+            
+            if(isShowing())
+                hideBar();
+            
+            var self = $(this);
+            var parentSelf = self.closest('.item');
+            
+            var item = -1;
+            
+            for(var pos=0;pos<obj.length;pos++){
+                if($(obj[pos]).is(parentSelf)){
+                    item = pos;
+                }
+            }
+            
+            var titleClicked;
+            var urlLinkClicked;
+            var descriptionClicked = " ";
+            
+            switch(item){
+                //10 Ways    
+                case 0:
+                    titleClicked = "10 Ways Against Corruption";
+                    urlLinkClicked = "https://github.com/eduhrcastro/10-Medidas";
+                    break;
+                //Pic03    
+                case 1:
+                    titleClicked = "Pic 03";
+                    urlLinkClicked = "http://eduhrcastro.github.io/#portfolio";
+                    break;
+                //IFCE Mobile
+                case 2:
+                    titleClicked = "IFCE Mobile";
+                    urlLinkClicked = "https://github.com/eduhrcastro/IFCE-Mobile";
+                    break;
+                //Pic05    
+                case 3:
+                    titleClicked = "Pic 05";
+                    urlLinkClicked = "http://eduhrcastro.github.io/#portfolio";
+                    break;
+                //Nucleus    
+                case 4:
+                    titleClicked = "Nucleus";
+                    urlLinkClicked = "https://github.com/Nucleus-Technology/nucleus.eti.br";
+                    break;
+                //Graphs    
+                case 5:
+                    titleClicked = "Graphs";
+                    urlLinkClicked = "https://github.com/eduhrcastro/graphs";
+                    break;
+            }
+            
+            title.text(titleClicked);
+            descriptionTitle.text("Project Description");
+            urlLink.text("URL");
+            urlLinkl.attr("href",urlLinkClicked);
+            des.text(descriptionClicked);
+            
+            displayBar();
+        }
+        
+        $('.showAnimation').click(workClicked);
+        $('#close-wrapper').click(hideBar);
+        
 		var	$window = $(window),
 			$body = $('body');
 
@@ -139,7 +185,9 @@
 					'</div>'
 				)
 					.appendTo($body);
-
+            
+                $('#headerToggle').click(hideBar);
+            
 			// Header.
 				$('#header')
 					.panel({
