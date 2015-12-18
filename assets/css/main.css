@@ -2201,6 +2201,13 @@
     transition: transform 0.5s ease;
 }
 
+#external-link{
+    position: absolute;
+    left: 20%;
+    margin-top: -4%;
+    display: none;
+}
+
 #content-wrapper{
     width: 70%;
     height: 90%;
@@ -2228,6 +2235,7 @@
     margin-left: 10%;
     width: 50%;
     height: 15%;
+    display: block;
 }
 
 #description{
@@ -2235,6 +2243,7 @@
     margin-left: 10%;
     width: 80%;
     height: 25%;
+    display: block;
 }
 
 #url-tile{   
@@ -2245,6 +2254,7 @@
     margin-top: 2.8%;
     width: 25%;
     height: 15%;
+    display: block;
 }
 
 #url{
@@ -2255,6 +2265,7 @@
     margin-right: -15%;
     width: 60%;
     height: 15%;
+    display: block;
 }
 
 /* Wide */
@@ -2569,7 +2580,7 @@
 				}
         
         #wrapper{
-            height: 55%;
+            height: 35%;
         }
         
         #land{
@@ -2594,7 +2605,8 @@
 
         #description{
             width: 85%;
-            height: 15%;            
+            height: 15%;     
+            margin-bottom: 10%;
         }
 
         #url-tile{
@@ -2612,7 +2624,7 @@
             margin-top: 3%;
             margin-left: 10%;
         }
-
+        
 	}
 
 /* Mobile */
@@ -2669,10 +2681,15 @@
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
-
+            
 	}
 
     @media screen and (max-width: 428px){
+        
+        #wrapper{
+            height: 70%;
+        }
+        
         #content-wrapper{
             width: 80%;
             margin-left: 10%;
@@ -2684,7 +2701,11 @@
         }
         
         #work-title{
-            margin-bottom: 25%;
+            margin-bottom: 15%;
+        }
+        
+        #description{
+            margin-bottom: 15%;
         }
         
         #wTitle{
@@ -2695,11 +2716,15 @@
 
     @media screen and (max-width: 960px) and (orientation: landscape){
         #wrapper{
-            height: 80%;
+            height: 85%;
         }
         
         #content-wrapper{
             margin-left: 3%;
+        }
+        
+        #description{
+            margin-bottom: 10%;
         }
         
         #land{
@@ -2709,9 +2734,21 @@
 
     @media screen and (max-width: 320px) {
         
+        #wrapper{
+            height: 65%;
+        }
+        
         #land{
             height: 90%;
             width: 90%;
+        }
+        
+        #work-title{
+            margin-bottom: 10%;
+        }
+        
+        #description{
+            margin-bottom: 25%;
         }
         
         #content-wrapper{
