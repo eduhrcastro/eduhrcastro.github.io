@@ -2220,6 +2220,7 @@
     margin-left: 10%;
     width: 50%;
     height: 15%;
+    display: block;
 }
 
 #description-title{
